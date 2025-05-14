@@ -28,8 +28,6 @@ AgroSoil is a smart agriculture tool that uses **Machine Learning** to recommend
 
 ![AgroSoil Screenshot](app/static/screenshot.png)
 
-> To add your own screenshot, take a screenshot of the running app, save it as `screenshot.png`, and place it inside the `app/static/` or `static/` folder (whichever you use). GitHub will load it using the relative path above.
-
 ---
 
 ## 📦 Installation & Usage

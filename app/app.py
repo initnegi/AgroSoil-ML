@@ -14,16 +14,20 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    N = int(request.form['nitrogen'])
-    P = int(request.form['phosphorus'])
-    K = int(request.form['potassium'])
-    pH = float(request.form['ph'])
+    try:
+        N = int(request.form['nitrogen'])
+        P = int(request.form['phosphorus'])
+        K = int(request.form['potassium'])
+        pH = float(request.form['ph'])
 
-    input_features = np.array([[N, P, K, pH]])
-    prediction = model.predict(input_features)
-    crop = prediction[0]
+        input_features = np.array([[N, P, K, pH]])
+        prediction = model.predict(input_features)
+        crop = prediction[0]
 
-    return render_template('index.html', prediction_text=f"🌱 Recommended Crop: {crop}")
+        return render_template('index.html', prediction_text=f"🌱 Recommended Crop: {crop}")
+    except Exception as e:
+        return render_template('index.html', prediction_text="⚠️ An error occurred during prediction.")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

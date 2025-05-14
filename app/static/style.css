@@ -1,0 +1,66 @@
+/* General page background */
+body {
+    background: linear-gradient(to right, #e6ffe6, #ccffcc);  /* Light green gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+}
+
+/* Marquee banner */
+.marquee-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #28a745;
+    color: white;
+    border-bottom: 2px solid #1e7e34;
+}
+
+/* Card component for the form */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Card header */
+.card-header {
+    background: linear-gradient(to right, #006400, #228B22);  /* Dark green gradient */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Form labels and inputs */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button */
+button.btn-success {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+/* Card footer */
+.card-footer {
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+}

@@ -14,10 +14,10 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    N = int(request.form['N'])
-    P = int(request.form['P'])
-    K = int(request.form['K'])
-    pH = float(request.form['pH'])
+    N = int(request.form['nitrogen'])
+    P = int(request.form['phosphorus'])
+    K = int(request.form['potassium'])
+    pH = float(request.form['ph'])
 
     input_features = np.array([[N, P, K, pH]])
     prediction = model.predict(input_features)
